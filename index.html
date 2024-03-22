@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glane Coffe Shop</title>
+    <img class="logo" alt="Glane logo" src="glane.jpg" />
+    <style>
+      body {
+  font-family: 'Courier New', Courier, monospace;
+  font-variant-numeric: tabular-nums; 
+}
+      .logo {
+        width: 100%;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      #cup{
+        width: 150px;
+      }
+      
+      .box {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        width: 80%;
+        cursor: pointer;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .content {
+        display: none;
+      }
+
+      .box:hover {
+        transform: translateY(-10px);
+      }
+
+      .box.open .content {
+        display: block;
+      }
+
+      /*@media (max-width: 600px) {
+        .box,
+        .logo {
+          width: 100%;
+        }
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>Coffee</h2>
+        
+        <div class="content">
+          
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Ristretto  </strong> |   ₺23  -</p>
+          <p><strong>Americano  </strong> |  ₺32  38</p>
+          <p><strong>Red Eye</strong> |  ₺44  ₺52</p>
+          <p><strong>Espresso</strong> |  ₺25  -</p>
+          <p><strong>Double Espresso</strong> |  ₺30  -</p>
+          <p><strong>Black Eye</strong> |  ₺46  ₺55</p>
+          <p><strong>Dead Eye</strong> |  ₺48  ₺57</p>
+          <p><strong>Cofe Bondi</strong> |  ₺39  ₺46</p>
+          <p><strong>Türk Kahvesi</strong> |  ₺26  -</p>
+          <p><strong>Double Türk Kahvesi</strong> |  ₺36  -</p>
+          <p><strong>Tarçınlı Türk Kahvesi</strong> |  ₺26  ₺31</p>
+          
+          <p><strong>Machiato</strong> |  ₺40  ₺48</p>
+          <p><strong>Caramel Machiato</strong> |  ₺43  ₺51</p>
+          <p><strong>Latte</strong> |  ₺36  ₺43</p>
+          <p><strong>Caramel Latte</strong> |  ₺39  ₺46</p>
+          <p><strong>Coco Latte</strong> |   ₺39  ₺46</p>
+          <p><strong>Spanish Latte</strong> |   ₺46  ₺55</p>
+          <p><strong>Toffe Nut Latte</strong> |   ₺39  ₺46</p>
+          <p><strong>Pumpkin Spice Latte</strong> |   ₺39  ₺46</p>
+          <p><strong>Strawberry Latte</strong> |   ₺39  ₺46</p>
+          <p><strong>Vanilla Latte</strong> |   ₺39  ₺46</p>
+          <p><strong>Cookie Latte</strong> |   ₺43  ₺51</p>
+          <p><strong>Biscoff Latte</strong> |   ₺46  ₺54</p>
+          <p><strong>Espresso-ChaiTea-Latte</strong> |   ₺41  ₺49</p>
+          <p><strong>Mocha</strong> |   ₺40  ₺48</p>
+          <p><strong>White Mocha</strong> |   ₺40  ₺48</p>
+          <p><strong>Zebra Mocha</strong> |   ₺46  ₺55</p>
+          <p><strong>Cappucino</strong> |   ₺40  ₺48</p>
+          <p><strong>Affogatto</strong> |   ₺36  ₺43</p>
+          <p><strong>Cortado</strong> |   ₺36  ₺43</p>
+          <p><strong>Flat White</strong> |   ₺41  ₺49</p>
+          <p><strong>Cafe Con Miel</strong> |   ₺38  ₺45</p>
+          <p><strong>Mocha Punch</strong> |   ₺46  -</p>
+          
+
+        
+      </div>
+      </div>
+      <div class="box">
+        <h2>Filter-Coffe</h2>
+        
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Classic Blend</strong> |   ₺32  ₺36</p>
+          <p><strong>Misto</strong>  |   ₺34  ₺40</p>
+          <p><strong>Vanilla French Spice</strong>  |   ₺35  ₺42</p>
+          <p><strong>Ethiopia</strong>  |   ₺40  ₺45</p>
+          <p><strong>Colombia</strong>  |   42₺  -</p>
+          <p><strong>Kenya</strong>  |   ₺40  ₺45</p>
+          <p><strong>Brazil</strong>  |   ₺40  ₺45</p>
+          <p><strong>V60</strong>  |   ₺40  ₺45</p>
+          <p><strong>Chemax</strong>  |    ₺40  ₺45</p>
+          <p><strong>AeroPress</strong>  |   ₺45  -</p>
+          <p><strong>Cold Brew</strong>  |   ₺44  -</p>
+          <p><strong>Cold Brew Latte</strong>  |   ₺46  ₺55</p>
+          
+
+
+        </div>
+      </div>
+      <div class="box">
+        <h2>Cold Drinks</h2>
+        
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Limonata:</strong> |   ₺40  ₺49</p>
+          <p><strong>Çilekli Limonata</strong> |   ₺43  ₺51</p>
+          <p><strong>Naneli Limonata</strong> |   ₺43  ₺51</p>
+          <p><strong>Karpuzlu Limonata</strong> |   ₺43  ₺51</p>
+          <p><strong>Cool Bery</strong> |   ₺41  ₺49</p>
+          <p><strong>Cool Cool-Lime</strong> |   ₺41  ₺49</p>
+          <p><strong>Iced-Tea</strong> |   ₺40  48₺</p>
+          <p><strong>Iced-Chai-Tea-Latte</strong> |   ₺41  ₺49</p>
+          <p><strong>Cold Chocolate</strong> |   ₺42  ₺50</p>
+          <p><strong>Soda</strong>  |   ₺18  -</p>
+          <p><strong>Churchill</strong>  |   ₺20  -</p>
+          <p><strong>Su</strong>  |   ₺12  -</p>
+        </div>
+      </div>
+      
+
+      <div class="box">
+        <h2>Iced-Coffe</h2>
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Iced Americano</strong>  |   ₺38  ₺45</p>
+          <p><strong>Iced Latte</strong>  |   ₺42  ₺50</p>
+          <p><strong>Iced Caramel Latte</strong>  |   ₺45  ₺54</p>
+          <p><strong>Iced Toffenut Latte</strong>  |   ₺45  ₺54</p>
+          <p><strong>Iced Vanilla Latte</strong>  |   ₺45  ₺54</p>
+          <p><strong>Iced Macchiato</strong>  |   ₺43  ₺51</p>
+          <p><strong>Iced Flat White</strong>  |   ₺46  ₺55</p>
+          <p><strong>Iced Mocha</strong>  |   ₺45  ₺54</p>
+          <p><strong>Iced White Mocha</strong>  |   ₺45  ₺54</p>
+          <p><strong>Iced Zebra Mocha</strong>  |   ₺48  ₺57</p>
+          <p><strong>Iced Filter</strong>  |   ₺38  ₺45</p>
+          <p><strong>Iced Misto Filter</strong>  |   ₺40  ₺48</p>
+          <p><strong>Classic Frappe</strong>  |   ₺43  ₺51</p>
+          <p><strong>Chocolate Frappe</strong>  |   ₺46  ₺55</p>
+          <p><strong>Caramel Frappe</strong>  |   ₺46  ₺55</p>
+          <p><strong>Strawberyy Frappe</strong>  |   ₺46  ₺55</p>
+          <p><strong>Toffee Nut Frappe</strong>  |   ₺46  ₺55</p>
+          <p><strong>Chai Creme Frappe</strong>  |   ₺48  ₺57</p>
+          <p><strong>Iced Red Eye</strong>  |   ₺46  ₺55</p>
+          <p><strong>Iced Black Eye</strong>  |   ₺48  ₺57</p>
+          <p><strong>Iced Dead Eye</strong>  |   ₺50  ₺60</p>
+          
+
+        </div>
+      </div>
+      <div class="box">
+        <h2>Coffe-Cocktail</h2>
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Cold Brew Lemonade</strong>  |   ₺50  ₺60</p>
+          <p><strong>Espresso Coco</strong>  |   ₺50  ₺60</p>
+          <p><strong>Coffe Mojito</strong>  |   ₺50  ₺60</p>
+          <p><strong>Espresso Tonic</strong>  |   ₺50  ₺60</p>
+        </div>
+      </div>
+      <div class="box">
+        <h2>Non-Coffe</h2>
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Siyah Çay</strong>  |   ₺13  ₺20</p>
+          <p><strong>Hibiscus</strong>  |   ₺36  ₺43</p>
+          <p><strong>Ada</strong>  |   ₺32  ₺38</p>
+          <p><strong>Melisa</strong>  |   ₺32  ₺38</p>
+          <p><strong>Ihlamur</strong>  |   ₺32  ₺38</p>
+          <p><strong>Kış</strong>  |   ₺32  ₺38</p>
+          <p><strong>Papatya</strong>  |   ₺32  ₺38</p>
+          <p><strong>Yeşil</strong>  |   ₺32  ₺38</p>
+          <p><strong>Classic Hot Chocolate</strong>  |   ₺36  ₺45</p>
+          <p><strong>Strawberry Hot Chocolate</strong>  |   ₺40  ₺48</p>
+          <p><strong>Chai Tea Latte</strong>  |   ₺38  ₺45</p>
+          <p><strong>Sahlep</strong>  |   ₺38  ₺45</p>
+
+        </div>
+      </div>
+      <div class="box">
+        <h2>Milkshake</h2>
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>OreaShake</strong>  |   ₺45  ₺54</p>
+          <p><strong>CoffeShake</strong>  |   ₺44  ₺52</p>
+          <p><strong>Çikolata</strong>  |   ₺43  ₺51</p>
+          <p><strong>Çilek</strong>  |   ₺43  ₺51</p>
+          <p><strong>Vanilya</strong>  |   ₺43  ₺51</p>
+          
+        </div>
+      </div>
+      <div class="box">
+        <h2>Frozen</h2>
+        <div class="content">
+          <img id="cup" src="glan22.png"/>
+          <p><strong>Nane Limonlu</strong> |   ₺41  ₺49</p>
+          <p><strong>Böğürtlenli</strong>  |   ₺41  ₺49</p>
+          <p><strong>Çilekli</strong>  |   ₺41  ₺49</p>
+          <p><strong>Orman Meyveli</strong>  |   ₺41  ₺49</p>
+          <p><strong>Karpuzlu</strong>  |   ₺41  ₺49</p>
+          
+        </div>
+      </div>
+      <div class="box">
+        <h2>Tatlı</h2>
+        <div class="content">
+          <p><strong>Brownie</strong>  |   ₺54</p>
+          <p><strong>Blondie</strong>  |   ₺54</p>
+          <p><strong>San Sebastian</strong>  |   ₺54</p>
+          
+        </div>
+      </div>
+      <div class="box">
+        <h2>Yiyecekler</h2>
+        <div class="content">
+          
+          <p><strong>Gurme Fiesta Sandwich</strong>  |   ₺48</p>
+          <p><strong>Panini Mozarella Sandwich</strong>  |   ₺45</p>
+          <p><strong>Ekşi Mayali Beş Peynirli Sandwich</strong>  |   ₺49</p>
+          <p><strong>Bowl</strong>  |   ₺42</p>
+        </div>
+      </div>
+      
+     
+      
+    <script>
+      const boxes = document.querySelectorAll(".box");
+
+      boxes.forEach((box) => {
+        box.addEventListener("click", function () {
+          this.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>
